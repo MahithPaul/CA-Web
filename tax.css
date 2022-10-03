@@ -80,7 +80,7 @@ nav ul {
 .dropdown::before{
     content: "";
     position: absolute;
-    right:500px;
+    right:595px;
     top: 115px;
     z-index: 1;
     width: 8px;
