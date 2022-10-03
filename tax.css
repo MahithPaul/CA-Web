@@ -101,6 +101,7 @@ nav ul {
     /* text-align: center; */
     width: 250px;
     padding: 10px;
+    background-color: #fff;
     font-size: 18px;
     border-radius: 10px;
     border: none;
@@ -148,15 +149,6 @@ nav ul {
         height: 40px;
         font-size: 1rem;
     }
-<<<<<<< HEAD
+
 }
-=======
-    .dropdown::before{
-        top: 295px; 
-        right:170px ;
-    }
-    .dropdown.active::before{
-        top:300px;
-    }
-}
->>>>>>> 8fe5acdd84487de0391333b1b135047ddc27d4e6
+
