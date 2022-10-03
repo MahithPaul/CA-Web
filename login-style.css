@@ -49,8 +49,6 @@ body{
 }
 
 .content {
-    /* width: 900px;
-    height: 600px; */
     padding: 1rem;
     display: grid;
     grid-template-columns: 2fr 1.7fr;
@@ -61,7 +59,7 @@ body{
     width: 350px;
     display: block;
     position: relative;
-    top: 20%;
+    top: 19%;
     left: 6%;
 }
 
@@ -75,6 +73,7 @@ body{
     letter-spacing: 1.2px;
     font-weight: 400;
     font-size: 1.3rem;
+    text-align: center;
     color: #027a60;
     margin: 10px;
 }
@@ -88,7 +87,8 @@ body{
 }
 
 .form-area {
-    margin: 5px;
+    margin-top: 45px;
+    /* margin: 5px; */
     padding: .8rem;
 }
 

@@ -13,8 +13,8 @@
     <section>
         <div class="panel">
             <div class="left-panel">
-                <img src="income-mobile.jpg" alt="Tax" class="image-1">
-                <img src="tax.jpg" alt="Income" class="images-2">
+                <img src="income-m.svg" alt="Tax" class="image-1">
+                <img src="tax.svg" alt="Income" class="images-2">
             </div>
             <div class="right-panel">
                 <nav>
@@ -23,21 +23,27 @@
                         <li class="nav-link">Income Tax</li>
                     </ul>
                 </nav>
-                <div class="year-area">
-                    <div class="dropdown">
-                        <input type="text" placeholder="Select Year" class="textbox" readonly>
-                        <div class="options">
-                            <div onclick="show('2023')">2023</div>
-                            <div onclick="show('2024')">2024</div>
-                            <div onclick="show('2025')">2025</div>
-                            <div onclick="show('2026')">2026</div>
-                            <div onclick="show('2027')">2027</div>
+                <div class="main-box">
+                    
+                    <div class="year-box">
+                        <p style="font-size:22px; color:#fff; font-weight:600;">Select the Year</p>
+                        <div class="year-area">
+                            <select name="Years" class="year-select">
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                            </select>
+                            <div class="select">
+                                <button><i class="fa-solid fa-download"></i>Download</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="select">
-                        <button>Select</button>
-                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
