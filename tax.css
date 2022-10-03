@@ -68,7 +68,7 @@ nav ul {
     align-items: center;
     background: rgb(255, 153, 139);
     background: linear-gradient(45deg, rgba(255, 153, 139, 1) 32%, rgba(255, 109, 136, 1) 66%);
-    gap: 20px
+    gap: 20px;
     border-radius: 20px;
     /* box-shadow: -3px -3px 7px #fff ,3px 3px 5px #ceced1; */
 }
@@ -76,6 +76,7 @@ nav ul {
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 .select button{
     width: 150px;
@@ -95,13 +96,15 @@ nav ul {
     background-color: #003847;
     color: #fff;
 }
-
 .year-select{
     cursor: pointer;
     /* text-align: center; */
     width: 250px;
     padding: 10px;
     font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
 }
 @media screen and (max-width:450px) {
     .panel{
