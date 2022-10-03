@@ -11,38 +11,52 @@
 
 <body>
     <header>
-    
+        <img src="logo.jpeg" alt="Logo" class="image-logo" width="70px" height="60px">
         <h1>Welcome,Mahiii...</h1>
-        <div class="dropdown">
+        <div class="dropdown" onclick="displayBlock()" ondblclick="displayNone()">
             <i class="fa-regular fa-user" style="font-size: 32px; padding:10px;"></i>
-            
+
         </div>
     </header>
     <div class="dropdown-content">
-                <div class="drop-content">
-                    <a href="#" class="drop">
-                        <i class="fa-solid fa-user"></i>
-                        <p>Profile</p>
-                    </a>
-                    <a href="#" class="drop">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        <p>logOut</p>
-                    </a>
-                </div>
-            </div>
-    
-   
+        <div class="drop-content">
+            <a href="#" class="drop">
+                <i class="fa-solid fa-user"></i>
+                <p>Profile</p>
+            </a>
+            <a href="#" class="drop">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>logOut</p>
+            </a>
+        </div>
+    </div>
+    <div class="text-area">
+        <h1>Welcome,Mahiii...</h1>
+    </div>
+
     <div class="div-row">
         <div class="col-1">
             <div class="card-wapper">
-                <a href="#" class="card-block card-purple-blue">Income Tax</a>
+                <a href="Income.html" class="card-block card-purple-blue">Income Tax</a>
                 <a href="#" class="card-block card-salmon-pink">Good Service Tax</a>
                 <a href="#" class="card-block card-purple-pink">MCA</a>
                 <a href="#" class="card-block card-blue-green">Others</a>
             </div>
         </div>
-        
+
     </div>
+    <script>
+        function displayBlock() {
+            document.querySelector(".dropdown-content").style.display = "block";
+
+
+        }
+        function displayNone() {
+
+            document.querySelector(".dropdown-content").style.display = "none";
+
+        }
+    </script>
 </body>
 
 </html>

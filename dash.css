@@ -23,19 +23,26 @@ header {
     padding: 5px 15px 5px 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.image-logo,.text-area{
+    display: none;
+}
 .dropdown-content{
     float: right;
     border-radius: 20px;
     min-width: 150px;
+    margin-right: 20px;
     background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 50%);
-    z-index: -999;
+    z-index: 99999;
     padding: 0.6rem;
-    /* display: none; */
+    display: none;
 }
 .dropdown-content a{
     border-radius: 10px;
     color: black;
+}
+.dropdown-content a:hover{
+    background-color: #f5f5f5;
 }
 .drop{
     display: flex;
@@ -49,7 +56,9 @@ header {
     margin-left: 16px;
 }
 .dropdown:hover{
+    background-color: #f5f5f5;
     cursor: pointer;
+    border-radius: 50%;
 }
 .div-row {
     margin: 90px 80px 0px;
@@ -93,10 +102,12 @@ header {
 .card-block {
     text-decoration: none;
     color: white;
+    display: flex;
     text-align: center;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 32px;
     padding: 2rem;
     width: 250px;
     height: 180px;
@@ -113,8 +124,16 @@ header {
     header{
     margin: 10px 20px 5px 20px;
     }
-    header .log-out{
-        width: 30px;
+    .text-area{
+        display: block;
+        font-size: .9rem;
+        margin: 10px 20px;
+    }
+    .image-logo{
+        display: block;
+    }
+    header h1{
+        display: none;
     }
     .div-row{
         margin: 30px 30px 0px;

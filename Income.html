@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P. Lakshmana rao & Co | INCOME TAX
+    </title>
+    <link rel="stylesheet" href="tax.css">
+    <script src="https://kit.fontawesome.com/7fd178d5a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div class="panel">
+            <div class="left-panel">
+                <img src="income-mobile.jpg" alt="Tax" class="image-1">
+                <img src="tax.jpg" alt="Income" class="images-2">
+            </div>
+            <div class="right-panel">
+                <nav>
+                    <ul>
+                        <li class="nav-link"><a href="Dashboard.html">Home</a></li>
+                        <li class="nav-link">Income Tax</li>
+                    </ul>
+                </nav>
+                <div class="year-area">
+                    <div class="dropdown">
+                        <input type="text" placeholder="Select Year" class="textbox" readonly>
+                        <div class="options">
+                            <div onclick="show('2023')">2023</div>
+                            <div onclick="show('2024')">2024</div>
+                            <div onclick="show('2025')">2025</div>
+                            <div onclick="show('2026')">2026</div>
+                            <div onclick="show('2027')">2027</div>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <button>Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function show(anything) {
+            document.querySelector(".textbox").value = anything;
+        }
+        let dropdown = document.querySelector(".dropdown");
+        dropdown.onclick = function () {
+            dropdown.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
