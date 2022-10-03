@@ -36,7 +36,6 @@ body{
 .content-main{
     position: fixed;
     margin-top: 40px;
-    /* width: 600px; */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);

@@ -68,7 +68,7 @@ nav ul {
     align-items: center;
     background: rgb(255, 153, 139);
     background: linear-gradient(45deg, rgba(255, 153, 139, 1) 32%, rgba(255, 109, 136, 1) 66%);
-    gap: 20px;
+    gap: 20px
     border-radius: 20px;
     /* box-shadow: -3px -3px 7px #fff ,3px 3px 5px #ceced1; */
 }
@@ -95,16 +95,13 @@ nav ul {
     background-color: #003847;
     color: #fff;
 }
+
 .year-select{
     cursor: pointer;
     /* text-align: center; */
     width: 250px;
     padding: 10px;
     font-size: 18px;
-    outline: none;
-    background-color: #fff;
-    border: none;
-    border-radius: 10px;
 }
 @media screen and (max-width:450px) {
     .panel{
@@ -148,4 +145,15 @@ nav ul {
         height: 40px;
         font-size: 1rem;
     }
+<<<<<<< HEAD
 }
+=======
+    .dropdown::before{
+        top: 295px; 
+        right:170px ;
+    }
+    .dropdown.active::before{
+        top:300px;
+    }
+}
+>>>>>>> 8fe5acdd84487de0391333b1b135047ddc27d4e6
