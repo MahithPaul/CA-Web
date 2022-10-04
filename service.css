@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color: #f0f0f0;
+}
+.panel{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+.left-panel{
+    width: 40%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.right-panel{
+    width: 60%;
+    height:100%;
+}
+.image-1{
+    display: none;
+}
+nav{
+    margin: 30px;
+    font-size: 27px;
+    /* color: white; */
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav-link a{
+    color: black;
+}
+.nav-link{
+    
+    font-weight: 600;
+}
+.nav-link a::after{
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0 13px;
+}
+.main-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.year-box{
+    width: 65%;
+    padding: 2rem;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(112, 124, 255);
+    background: linear-gradient(45deg, rgba(112, 124, 255, 1) 20%, rgba(250, 129, 232, 1) 72%);
+    gap: 20px;
+    border-radius: 20px;
+    /* box-shadow: -3px -3px 7px #fff ,3px 3px 5px #ceced1; */
+}
+.year-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.select button{
+    width: 150px;
+    height: 45px;
+    margin-left: 40px; 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+.select button:hover{
+    background-color: #003847;
+    color: #fff;
+}
+.year-select{
+    cursor: pointer;
+    /* text-align: center; */
+    width: 250px;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width:450px) {
+    .panel{
+        flex-direction: column;
+    }
+    .image-1{
+        display: block;
+        height: 250px;
+    }
+    .images-2{
+        display: none;
+    }
+    .left-panel{
+        height: 24%;
+        width: 100%;
+        background-color: #ad0068;
+    }
+    .left-panel img{
+        width: 380px;
+        height: 160px;
+    }
+    .right-panel{
+        height: 60%;
+        width: 100%;
+    }
+    nav{
+        font-size: 1rem;
+    }
+    .year-area{
+        margin-top: 30px;
+        /* width: 320px; */
+    }
+    .year-box{
+        width: 80%;
+    }
+    .year-select{
+        padding: 4px;
+    }
+    .select button{
+        margin-left: 20px;
+        width: 130px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+}
+
