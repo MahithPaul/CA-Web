@@ -95,7 +95,7 @@ body{
     padding: .7rem;
     padding-left: 2.2rem;
     border: 1px solid #bebebe;
-    
+    outline: none;
 }
 .alert{
     display: none;
@@ -104,6 +104,7 @@ body{
 }
 .msg-box{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .msg-box .close-btn{
