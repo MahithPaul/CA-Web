@@ -11,41 +11,51 @@
 body {
     background-color: #fff;
 }
-.panel{
+
+.panel {
     display: flex;
     height: 100%;
     flex-direction: row;
 }
-.left-panel{
+
+.left-panel {
     width: 40%;
-    height:100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.right-panel{
+
+.right-panel {
     width: 60%;
-    height:100%;
+    height: 100%;
 }
-.image-1{
+
+.image-1 {
     display: none;
 }
-nav{
+
+nav {
     margin: 30px;
     font-size: 27px;
+    /* color: white; */
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
 }
-.nav-link a{
+
+.nav-link a {
     color: black;
 }
-.nav-link{
-    
+
+.nav-link {
+
     font-weight: 600;
 }
-.nav-link a::after{
+
+.nav-link a::after {
     display: inline-block;
     color: #000;
     content: '>';
@@ -53,12 +63,13 @@ nav ul {
     font-weight: bold;
     padding: 0 13px;
 }
-.main-box{
+
+.main-box {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.year-box{
+.year-box {
     width: 65%;
     padding: 2rem;
     margin: 20px 40px;
@@ -66,22 +77,24 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(112, 124, 255);
-    background: linear-gradient(45deg, rgba(112, 124, 255, 1) 20%, rgba(250, 129, 232, 1) 72%);
+    background: #e96443;
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);
+    background: linear-gradient(to right, #904e95, #e96443);
     gap: 20px;
     border-radius: 20px;
-    /* box-shadow: -3px -3px 7px #fff ,3px 3px 5px #ceced1; */
 }
-.year-area{
+
+.year-area {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
-.select button{
+
+.select button {
     width: 150px;
     height: 45px;
-    margin-left: 40px; 
+    margin-left: 40px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -92,11 +105,13 @@ nav ul {
     background-color: #fff;
     border: none;
 }
-.select button:hover{
+
+.select button:hover {
     background-color: #003847;
     color: #fff;
 }
-.year-select{
+
+.year-select {
     cursor: pointer;
     /* text-align: center; */
     width: 250px;
@@ -107,44 +122,58 @@ nav ul {
     border: none;
     outline: none;
 }
+
 @media screen and (max-width:450px) {
-    .panel{
+    .panel {
         flex-direction: column;
     }
-    .image-1{
+
+    .image-1 {
         display: block;
         height: 250px;
     }
-    .images-2{
+
+    .images-2 {
         display: none;
     }
-    .left-panel{
+
+    .left-panel {
         height: 28%;
         width: 100%;
-        background-color: #ad0068;
+        background-color: #57b4b0;
     }
-    .left-panel img{
+
+    .left-panel img {
         width: 430px;
         height: 190px;
     }
-    .right-panel{
+
+    .right-panel {
         height: 60%;
         width: 100%;
     }
-    nav{
+
+    nav {
         font-size: 1rem;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-bottom: 10px;
     }
-    .year-area{
+
+    .year-area {
         margin-top: 30px;
         /* width: 320px; */
     }
-    .year-box{
+
+    .year-box {
         width: 80%;
     }
-    .year-select{
+
+    .year-select {
         padding: 4px;
     }
-    .select button{
+
+    .select button {
         margin-left: 20px;
         width: 130px;
         height: 40px;
@@ -152,4 +181,3 @@ nav ul {
     }
 
 }
-

@@ -66,8 +66,10 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(255, 153, 139);
-    background: linear-gradient(45deg, rgba(255, 153, 139, 1) 32%, rgba(255, 109, 136, 1) 66%);
+    background: #ef32d9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     gap: 20px;
     border-radius: 20px;
     /* box-shadow: -3px -3px 7px #fff ,3px 3px 5px #ceced1; */
@@ -119,12 +121,12 @@ nav ul {
         display: none;
     }
     .left-panel{
-        height: 24%;
+        height: 27%;
         width: 100%;
     }
     .left-panel img{
         width: 430px;
-        height: 190px;
+        height: 200px;
     }
     .right-panel{
         height: 60%;

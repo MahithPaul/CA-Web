@@ -8,36 +8,19 @@
     overflow: hidden;
 }
 body{
-    background-image: url("cool-background (3).png");
-}
-
-
-.big-cricle {
-    background-color: #027a60;
-    width: 600px;
-    height: 600px;
-    margin-top: -100px;
-    margin-left: -200px;
-    border-radius: 50%;
-}
-
-.small-cricle {
-    background-color: #003847;
-    width: 900px;
-    height: 900px;
-    float: right;
-    margin-bottom: 0px;
-    margin-top: -200px;
-    margin-right: -400px;
-    border-radius: 50%;
+    background: #67B26F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
 
 .container {
     position: fixed;
     width: 800px;
     margin-top: 10px;
-    height: 430px;
+    height: 470px;
+    /* padding: 1rem; */
     top: 50%;
     left: 50%;
     z-index: 9;

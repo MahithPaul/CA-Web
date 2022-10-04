@@ -8,29 +8,12 @@
     overflow: hidden;
 }
 body{
-    background-image: url("cool-background (3).png");
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
-.big-cricle {
-    background-color: #027a60;
-    width: 600px;
-    height: 600px;
-    margin-top: -200px;
-    margin-left: -120px;
-    border-radius: 50%;
-}
-
-.small-cricle {
-    background-color: #003847;
-    width: 900px;
-    height: 900px;
-    float: right;
-    margin-bottom: 0px;
-    margin-top: -200px;
-    margin-right: -400px;
-    border-radius: 50%;
-
-}
 /* sign up */
 
 .content-main{
@@ -57,17 +40,6 @@ body{
     font-weight: 300;
     text-transform: capitalize;
 }
-/* #error{
-    margin: 2px 52px;
-    padding: 10px;
-    display: none;
-    width: 400px;
-    border: .7px solid #FB3532 ;
-    background-color: #a1dff0;
-    font-weight: 500;
-    border-radius: 5px;
-    text-align: center;
-} */
 .input-box{
     display: flex;
     flex-direction: row;
@@ -86,11 +58,10 @@ body{
     padding: .7rem;
     padding-left: 2.2rem;
     border: 1px solid #bebebe;
-    
 }
 .input-group-1 .Input-mail{
     margin: 12px;
-    width: 410px;
+    width: 400px;
     border-radius: 5px;
     padding: .7rem;
     padding-left: 2.2rem;
@@ -131,22 +102,6 @@ body{
     min-width: 40px;
     color: #027a60;
 }
-/* .input-group-1 #mail{
-    position: relative;
-    color: #027a60;
-    margin: 2px;
-    top: 5px;
-    left: 48px;
-    font-size: 1.2rem;
-} */
-/* .input-group-1 .fas{
-    position: relative;
-    color: #027a60;
-    margin: 2px;
-    top: 5px;
-    left: 42px;
-    font-size: 1.2rem;
-} */
 .input-group-1 .Input:focus{
     outline: none;
 }
@@ -199,21 +154,12 @@ body{
     background:#027a60;
 }
 @media screen and (max-width: 450px) {
-    .big-cricle , .small-cricle{
-        width: 400px;
-        height: 400px;
-    }
-    .small-cricle{
-        position: fixed;
-        bottom: -30%;
-        right: 50%;
-    }
     .containr ,.content-main{
-        width: 350px;
-        height: 550px;
+        width: calc(100% - 10px);
+        height: auto;  
     }
     .content-main{
-        padding: .4rem;
+        padding: 0rem;
     }
     .myform-1{
         margin: 9px;
@@ -228,5 +174,19 @@ body{
         width: 150px;
         margin-right: 0px;
         padding: .2rem;
+    }
+    .input-box{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .input-group-1 .Input{
+        width: calc(100% - 10px);
+    }
+    .input-group-1 .Input-mail{
+        width: calc(100% - 10px);   
+    }
+    .myform-1 p{
+        font-size: 12px;
+        font-weight: 600;
     }
 }
