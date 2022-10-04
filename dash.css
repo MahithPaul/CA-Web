@@ -140,7 +140,7 @@ header {
     .text-area {
         display: block;
         font-size: .9rem;
-        margin: 10px 20px;
+        margin: 15px 20px;
     }
 
     .image-logo {
@@ -152,7 +152,7 @@ header {
     }
 
     .div-row {
-        margin: 30px 30px 0px;
+        margin: 25px 40px 15px;
     }
     .dropdown-content{
         z-index:9999;
@@ -160,7 +160,7 @@ header {
     .card-block {
         width: 220px;
         height: 150px;
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .card-wapper {
