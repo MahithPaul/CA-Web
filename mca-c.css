@@ -21,6 +21,10 @@ body {
 .left-panel {
     width: 40%;
     height: 100%;
+    background-image: url("mca-m.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -29,10 +33,6 @@ body {
 .right-panel {
     width: 60%;
     height: 100%;
-}
-
-.image-1 {
-    display: none;
 }
 
 nav {
@@ -69,6 +69,7 @@ nav ul {
     display: flex;
     justify-content: center;
 }
+
 .year-box {
     width: 65%;
     padding: 2rem;
@@ -102,7 +103,7 @@ nav ul {
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: rgb(237, 239, 254);
     border: none;
 }
 
@@ -128,24 +129,13 @@ nav ul {
         flex-direction: column;
     }
 
-    .image-1 {
-        display: block;
-        height: 250px;
-    }
-
     .images-2 {
         display: none;
     }
 
     .left-panel {
         height: 28%;
-        width: 100%;
-        background-color: #57b4b0;
-    }
-
-    .left-panel img {
-        width: 430px;
-        height: 190px;
+        width: calc(100% - 0px);
     }
 
     .right-panel {
@@ -162,7 +152,6 @@ nav ul {
 
     .year-area {
         margin-top: 30px;
-        /* width: 320px; */
     }
 
     .year-box {

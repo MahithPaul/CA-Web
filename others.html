@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P. Lakshmana rao & Co | OTHERS</title>
+    <link rel="stylesheet" href="other-css.css">
+    <script src="https://kit.fontawesome.com/7fd178d5a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="nav-link"><a href="Dashboard.html">Home</a></li>
+            <li class="nav-link">Others</li>
+        </ul>
+    </nav>
+    <div class="main-page">
+        <div class="css-128iv">
+            <div class="content">
+                <div class="empty-set">
+                    <h1 class="d-flex justify-center">
+                        <span class="d-block">Upload a file</span>
+                    </h1>
+                    <div class="css-127iv" style="max-width:450px ;">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="cloud-icon">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                </div>
+                                <div data-v-233d445a>
+                                    <input type="file" class="filename" hidden>
+                                    <button onclick="Upload()" class="btn-p" data-v-233d445a type="file">
+                                        <i class="fa-solid fa-upload"></i>
+                                        Upload File
+                                </div>
+                                <div class="drop">
+                                    Or drop a file
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-page-1">
+        <div class="head-name">
+            <h1 class="text">Admin Uploads</h1>
+            <div class="file-area">
+                <table>
+                    <tbody>
+                        <tr class="trz trh">
+                            <td class="tdc">
+                                filename
+                            </td>
+                            <td>
+                                <div class="select">
+                                    <button><i class="fa-solid fa-download"></i>Download</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="trz trh">
+                            <td class="tdc">
+                                filename
+                            </td>
+                            <td>
+                                <div class="select">
+                                    <button><i class="fa-solid fa-download"></i>Download</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="trz trh">
+                            <td class="tdc">
+                                filename
+                            </td>
+                            <td>
+                                <div class="select">
+                                    <button><i class="fa-solid fa-download"></i>Download</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="trz trh">
+                            <td class="tdc">
+                                filename
+                            </td>
+                            <td>
+                                <div class="select">
+                                    <button><i class="fa-solid fa-download"></i>Download</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="trz trh">
+                            <td class="tdc">
+                                filename
+                            </td>
+                            <td>
+                                <div class="select">
+                                    <button><i class="fa-solid fa-download"></i>Download</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const filename = document.querySelector(".filename");
+        const submit = document.querySelector(".btn-p");
+        function Upload(){
+            filename.click();
+        }
+        let file;
+        const dropArea = document.querySelector(".card");
+        dropArea.addEventListener("dragover" , (event)=>{
+            event.preventDefault();
+            <!-- console.log("File is over Drage"); -->
+            dropArea.classList.add("active");
+        });
+        dropArea.addEventListener("dragleave" , ()=>{
+            <!-- console.log("File is outside Drage"); -->
+            dropArea.classList.remove("active");
+        });
+        dropArea.addEventListener("drop" , (event)=>{
+            event.preventDefault();
+            <!-- console.log("File is Dropped"); -->
+            file= event.dataTransfer.files[0];
+            let fileType = file.type;
+            console.log(fileType);
+        });
+    </script>
+</body>
+
+</html>

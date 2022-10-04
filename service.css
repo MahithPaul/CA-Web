@@ -19,6 +19,10 @@ body {
 .left-panel{
     width: 40%;
     height:100%;
+    background-image: url("gst-m.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -111,21 +115,13 @@ nav ul {
     .panel{
         flex-direction: column;
     }
-    .image-1{
-        display: block;
-        height: 250px;
-    }
     .images-2{
         display: none;
     }
     .left-panel{
         height: 28%;
-        width: 100%;
+        width: calc(100% - 0px);
         background-color: #ad0068;
-    }
-    .left-panel img{
-        width: 430px;
-        height: 190px;
     }
     .right-panel{
         height: 60%;
