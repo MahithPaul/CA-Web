@@ -37,7 +37,8 @@
     </header>
     <!-- mobile menu -->
     <div class="overlay" id="mobile-nav" style="width:100%;">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="blocker" onclick="hidePopup()"></div>
+       
         <div class="overlay-content">
             <a href="index.html" class="btn-grp-1">Home</a>
             <a href="Dashboard.html" class="btn-grp-1">Services</a>
@@ -206,8 +207,7 @@
             document.getElementById("mobile-nav").style.width = "70%";
             document.getElementById("mobile-nav").style.display = "block";
         }
-
-        function closeNav() {
+        function hidePopup() {
             document.getElementById("mobile-nav").style.width = "0%";
         }
     </script>

@@ -40,7 +40,16 @@ header {
     padding: 0.6rem;
     display: none;
 }
-
+.blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    margin-right: 200px;
+    background: rgba(0, 0, 0, 0);
+}
 .dropdown-content a {
     border-radius: 10px;
     color: black;

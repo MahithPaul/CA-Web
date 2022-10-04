@@ -13,12 +13,13 @@
     <header>
         <img src="logo.jpeg" alt="Logo" class="image-logo" width="70px" height="60px">
         <h1>Welcome,Mahiii...</h1>
-        <div class="dropdown" onclick="displayBlock()" ondblclick="displayNone()">
+        <div class="dropdown" onclick="displayBlock()" >
             <i class="fa-regular fa-user" style="font-size: 32px; padding:10px;"></i>
 
         </div>
     </header>
     <div class="dropdown-content">
+        <div class="blocker" onclick="hidePopup()"></div>
         <div class="drop-content">
             <a href="#" class="drop">
                 <i class="fa-solid fa-user"></i>
@@ -48,14 +49,11 @@
     <script>
         function displayBlock() {
             document.querySelector(".dropdown-content").style.display = "block";
-
-
         }
-        function displayNone() {
-
+        function hidePopup() {
+            
             document.querySelector(".dropdown-content").style.display = "none";
-
-        }
+          }
     </script>
 </body>
 

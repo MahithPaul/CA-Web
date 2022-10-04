@@ -7,12 +7,14 @@
     font-family: "Poppins", sans-serif;
 
 }
-body{
+
+body {
     /* background-color:#fff; */
     background-image: linear-gradient(to left top, #d3d8c5, #e5caa2, #ffb298, #ff98b7, #fa91f7);
 }
+
 nav {
-    margin: 30px;
+    margin: 30px 30px 20px 30px;
     font-size: 27px;
 }
 
@@ -38,41 +40,48 @@ nav ul {
     font-weight: bold;
     padding: 0 13px;
 }
-.css-128iv{
-    padding-bottom: 40px;
-}
-.content{
+
+
+.content {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
+    display: flex;
+    flex-direction: column;
     padding-right: 15px;
     width: 100%;
 }
-.empty-set{
+
+.empty-set {
     padding: 20px 0px 40px;
     text-align: center;
     margin: 0px 280px;
     border-radius: 20px;
-    
+
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
-.justify-center{
+
+.justify-center {
     justify-content: center;
 }
-.d-block{
+
+.d-block {
     display: block;
     padding: 0px 10px;
     /* color: #fff; */
     font-size: 2.2rem;
 }
-.css-127iv{
+
+.css-127iv {
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
 }
-.card{
+
+.card {
     word-wrap: break-word;
     background-clip: border-box;
     background-color: #fff;
@@ -84,16 +93,19 @@ nav ul {
     position: relative;
     box-shadow: 0 0 40px rgb(0 0 0 / 10%);
 }
-.card.active{
-    border: 2px dotted #0f70e6; 
+
+.card.active {
+    border: 2px dotted #0f70e6;
 }
-.card-body{
+
+.card-body {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
     text-align: center;
 }
-.cloud-icon{
+
+.cloud-icon {
     display: block;
     align-items: center;
     margin-top: 3rem;
@@ -101,7 +113,8 @@ nav ul {
     color: #d6d7d8;
     font-size: 7rem;
 }
-.btn-p{
+
+.btn-p {
     border-radius: 99px;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -112,41 +125,51 @@ nav ul {
     border-color: #0f70e6;
     color: #fff;
 }
-.btn-p:hover{
+
+.btn-p:hover {
     background-color: #0d5fc2;
     border-color: #0c59b6;
     color: #fff;
     cursor: pointer;
 }
-.drop{
+
+.drop {
     margin-top: 10px;
     margin-bottom: 2rem;
 }
-.main-page-1{
+
+.main-page-1 {
     margin: auto 0px;
 }
-.head-name{
+
+.head-name {
     margin: 0px 40px;
 }
-.text{
+
+.text {
     padding: 10px;
     border: 10px;
     border-bottom: 2px solid #fff;
 }
-.file-area{
-    margin-top: 80px;
+
+.file-area {
+    margin-top: 20px;
     margin-bottom: 30px;
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 2rem 5rem;
 }
-table,tbody{
+
+table,
+tbody {
     display: block;
 }
-tbody{
+
+tbody {
     vertical-align: middle;
 }
-.trz{
+
+.trz {
     padding: 20px 40px;
     -webkit-box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
     box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
@@ -154,24 +177,28 @@ tbody{
     display: -webkit-flex;
     display: flex;
     margin: 10px;
+    align-items: center;
+    background-color: #e9eaeb;
     justify-content: space-between;
-    transform:scaleX(1);
+    transform: scaleX(1);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.trh:hover{
+.trh:hover {
     transform: scaleX(1.03);
     background-color: #fff;
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.tdc{
-  height: 45px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.tdc {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .select button {
     width: 150px;
     height: 45px;
@@ -190,4 +217,47 @@ tbody{
 .select button:hover {
     background-color: #003847;
     color: #fff;
+}
+
+@media screen and (max-width:450px) {
+    nav {
+        font-size: 18px;
+    }
+
+    .cloud-icon,
+    .drop {
+        display: none;
+    }
+
+    .css-128iv,
+    .empty-set {
+        width: calc(100% - 10px);
+    }
+
+    .content {
+        padding-left: 35px;
+    }
+
+    .empty-set {
+        margin: 0px 0px;
+        padding: 0px;
+    }
+
+    .head-name {
+        margin: 0px 10px;
+    }
+    .file-area{
+        margin-top: 40px;
+        padding: 0rem 0.5rem;
+        padding-bottom: 10px;
+    }
+    .trz{
+        padding: 10px 15px;
+    }
+    .select button{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        
+    }
 }

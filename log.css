@@ -698,8 +698,12 @@ footer {
 
 .overlay {
     display: none;
-    height: 100%;
+    height: 647px;
     width: 0%;
+    margin-top: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -708,13 +712,15 @@ footer {
     overflow-x: hidden;
     transition: 0.5s;
 }
-
-.overlay .closebtn {
-    position: absolute;
-    top: -10px;
-    right: -3px;
-    font-size: 60px;
-    font-weight: 300;
+.blocker {
+    position: fixed;
+    top: 0px;
+    left:0 ;
+    bottom: 0;
+    margin-top: 70px;
+    right: 0;
+    content: ' ';
+    background: rgba(0,0,0,0);
 }
 
 .btn-area {
@@ -738,14 +744,18 @@ footer {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 500;
     color: #003847;
+    margin: 5px;
     display: block;
     transition: 0.3s;
 }
 
 .overlay a:hover {
-    color: #027a60;
+    color: #fff;
+    background-color: #003847;
 }
 
 .overlay .btn-grp-1 {
@@ -760,7 +770,7 @@ footer {
 
 .overlay-content {
     position: relative;
-    top: 14%;
+    top: 4%;
     width: 100%;
 }
 
