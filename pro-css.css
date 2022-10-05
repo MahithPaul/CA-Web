@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #fff;
+}
+.main-hero{
+    background-color: aliceblue;
+    margin: 30px;
+    border-radius: 40px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.gardient-box{
+    margin-left: 80px;
+    width: auto;
+    background: rgb(10,15,87);
+background: linear-gradient(95deg, rgba(10,15,87,1) 24%, rgba(40,40,180,1) 56%, rgba(86,75,240,1) 82%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 3rem;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 120px;
+}
+.css-123ht{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    font-size: 2.4rem;
+    color: aliceblue;
+}
+.css-223iv{
+    margin:  50px 270px 30px;
+    padding-bottom: 1rem;
+}
+.user-css{
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+    border-bottom: 3px solid #0c59b6;
+}
+.css-det{
+    margin: 20px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 70px);
+    border-radius: 10px;
+    background-color: #0c59b6;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    cursor: pointer;
+}
+.css-det h3{
+    width: calc(100% - 370px);
+    margin-right: 20px;
+    color: #fff;
+}
+.css-n{
+    margin-left: 50px;
+    width: calc(100% - 40px);
+    padding:1rem;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+@media screen and (max-width:450px) {
+    .main-hero{
+        margin: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    .gardient-box{
+        margin-left: 40px;
+        padding: 2rem 1rem;
+        border-bottom-left-radius: 50px;
+    }
+    .css-123ht{
+        font-size: 1.4rem;
+    }
+    .css-223iv{
+        margin: 20px 40px 30px;
+    }
+    .user-css{
+        font-size: 1rem;
+        border-bottom: 2px solid #0c59b6;
+    }
+    .css-det{
+        margin: 10px;
+        padding: 10px;
+        width: calc(100% - 30px);
+        font-size: 12px;
+    }
+    .css-n{
+        padding: 10px;
+    }
+}
