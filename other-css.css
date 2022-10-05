@@ -113,13 +113,38 @@ nav ul {
     color: #d6d7d8;
     font-size: 7rem;
 }
-
+.choose-file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.filename{
+    padding: 2px;
+    /* border: 3px solid #003847; */
+    color: #fff;
+    width: 140px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+.filename::-webkit-file-upload-button:hover{
+    cursor: pointer;
+}
+.filename::-webkit-file-upload-button{
+    background-color: #003847;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+}
 .btn-p {
     border-radius: 99px;
     font-size: 1.25rem;
     line-height: 1.5;
     padding: 0.75rem 2rem;
-    min-width: 226px;
+    min-width: 126px;
     border: none;
     background-color: #0f70e6;
     border-color: #0f70e6;
@@ -133,10 +158,6 @@ nav ul {
     cursor: pointer;
 }
 
-.drop {
-    margin-top: 10px;
-    margin-bottom: 2rem;
-}
 
 .main-page-1 {
     margin: auto 0px;
