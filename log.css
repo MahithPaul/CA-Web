@@ -647,7 +647,7 @@ footer {
 }
 
 .footer-down {
-    width: 1170px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -778,17 +778,12 @@ footer {
     .mobile-hamburger {
         display: block;
     }
-
     header nav {
         display: none;
     }
 
     .overlay a {
         font-size: 20px;
-    }
-
-    footer {
-        display: none;
     }
 
     .image-logo {
@@ -823,5 +818,19 @@ footer {
     .about-us-area {
         flex-direction: column;
     }
-
+    .row-f{
+        flex-direction: column;
+    }
+    .footer-info{
+        margin-top: 0px;
+    }
+    .main-text{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer{
+        margin-top: 1rem;
+    }
 }

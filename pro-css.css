@@ -6,20 +6,23 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
     background-color: #fff;
 }
-.main-hero{
+
+.main-hero {
     background-color: aliceblue;
     margin: 30px;
     border-radius: 40px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
-.gardient-box{
+
+.gardient-box {
     margin-left: 80px;
     width: auto;
-    background: rgb(10,15,87);
-background: linear-gradient(95deg, rgba(10,15,87,1) 24%, rgba(40,40,180,1) 56%, rgba(86,75,240,1) 82%);
+    background: rgb(10, 15, 87);
+    background: linear-gradient(95deg, rgba(10, 15, 87, 1) 24%, rgba(40, 40, 180, 1) 56%, rgba(86, 75, 240, 1) 82%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,23 +30,27 @@ background: linear-gradient(95deg, rgba(10,15,87,1) 24%, rgba(40,40,180,1) 56%, 
     border-top-right-radius: 40px;
     border-bottom-left-radius: 120px;
 }
-.css-123ht{
+
+.css-123ht {
     display: flex;
     align-items: left;
     justify-content: center;
     font-size: 2.4rem;
     color: aliceblue;
 }
-.css-223iv{
-    margin:  50px 270px 30px;
+
+.css-223iv {
+    margin: 50px 270px 30px;
     padding-bottom: 1rem;
 }
-.user-css{
+
+.user-css {
     padding-bottom: 5px;
     font-size: 1.4rem;
     border-bottom: 3px solid #0c59b6;
 }
-.css-det{
+
+.css-det {
     margin: 20px;
     padding: 1rem;
     display: flex;
@@ -54,46 +61,62 @@ background: linear-gradient(95deg, rgba(10,15,87,1) 24%, rgba(40,40,180,1) 56%, 
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     cursor: pointer;
 }
-.css-det h3{
+
+.css-det h3 {
     width: calc(100% - 370px);
     margin-right: 20px;
     color: #fff;
 }
-.css-n{
+
+.css-n {
     margin-left: 50px;
     width: calc(100% - 40px);
-    padding:1rem;
+    padding: 1rem;
     border-radius: 10px;
     background-color: aliceblue;
 }
+
 @media screen and (max-width:450px) {
-    .main-hero{
+    body {
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+        align-items: center;
+    }
+
+    .main-hero {
         margin: 20px;
         width: 100%;
         height: 100%;
     }
-    .gardient-box{
+
+    .gardient-box {
         margin-left: 40px;
         padding: 2rem 1rem;
         border-bottom-left-radius: 50px;
     }
-    .css-123ht{
+
+    .css-123ht {
         font-size: 1.4rem;
     }
-    .css-223iv{
+
+    .css-223iv {
         margin: 20px 40px 30px;
     }
-    .user-css{
+
+    .user-css {
         font-size: 1rem;
         border-bottom: 2px solid #0c59b6;
     }
-    .css-det{
+
+    .css-det {
         margin: 10px;
         padding: 10px;
         width: calc(100% - 30px);
         font-size: 12px;
     }
-    .css-n{
+
+    .css-n {
         padding: 10px;
     }
 }
