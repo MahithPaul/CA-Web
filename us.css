@@ -863,12 +863,11 @@ footer {
     }
 
     .type {
-        width: calc(100% - 10px);
         grid-template-columns: 1fr;
     }
-    .address-area{
+    .address-area,.form-text-area{
         height: 100%;
-        width: calc(100% - 20px);
+        width: calc(100% - 90px);
         margin: 0px;
     }
     .address-head {
