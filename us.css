@@ -389,6 +389,7 @@ section {
     background-color: rgb(238, 237, 237);
     border-radius: 9px;
     margin: 7px;
+    width: auto;
 }
 
 .address-group {
@@ -867,7 +868,7 @@ footer {
     }
     .address-area,.form-text-area{
         height: 100%;
-        width: calc(100% - 90px);
+        width: calc(100% - 60px);
         margin: 0px;
     }
     .address-head {
