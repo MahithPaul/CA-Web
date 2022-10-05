@@ -555,7 +555,7 @@ footer {
 }
 
 .main-text {
-    width: 1170px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -698,9 +698,9 @@ footer {
 
 .overlay {
     display: none;
-    height: 647px;
+    height: 100%;
     width: 0%;
-    margin-top: 20px;
+    margin: 30px 0px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -718,6 +718,7 @@ footer {
     left:0 ;
     bottom: 0;
     margin-top: 70px;
+    margin-left: 200px;
     right: 0;
     content: ' ';
     background: rgba(0,0,0,0);
@@ -784,7 +785,9 @@ footer {
     .overlay a {
         font-size: 20px;
     }
-
+    /* footer{
+        display: none;
+    } */
     .image-logo {
         width: 60px;
         height: 50px;
@@ -825,13 +828,18 @@ footer {
     .footer-info{
         margin-top: 0px;
     }
-    .main-text{
+    /* .main-text{
         padding: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+    } */
     footer{
         margin-top: 1rem;
+    }
+    .col-1f{
+        width: 100%;
+        min-height: 1px;
+        padding: 0px 15px;
     }
 }
