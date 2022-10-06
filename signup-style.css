@@ -155,11 +155,16 @@ body{
 }
 @media screen and (max-width: 450px) {
     .containr ,.content-main{
-        width: calc(100% - 10px);
+        /* width: calc(100% - 10px); */
         height: auto;  
     }
     .content-main{
         padding: 0rem;
+        position: static;
+        top: 0px;
+        left: 0px;
+        margin-left: auto;
+        transform: none;
     }
     .myform-1{
         margin: 9px;
