@@ -201,7 +201,9 @@
     align-items: center;
     gap: 1rem;
 }
-
+.ser-card :hover{
+    color: #003847;
+}
 .ser-card {
     width: 310px;
     height: 350px;
@@ -219,7 +221,9 @@
     font-size: 3.2rem;
     text-align: center;
 }
-
+/* .ser-card i:hover{
+    color: #02227a;
+} */
 .ser-card h2 {
     text-transform: capitalize;
     text-align: center;
@@ -230,7 +234,8 @@
     text-align: center;
 }
 .ser-card:hover {
-    box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    
 
 }
 /* MOBILE VIEW */
