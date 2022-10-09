@@ -8,6 +8,11 @@
     <title>P. Lakshmana rao & Co | Reset Password</title>
     <link rel="stylesheet" href="for.css">
     <script src="https://kit.fontawesome.com/7fd178d5a2.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -15,6 +20,20 @@
         <div class="center">
             <h1>Reset Password</h1>
             <form method="post">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Password should contain atleast one uppercase,one lowercase,one numeric and one special character
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  
+                  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Password must be at least 6 characters
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  
+                  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Passwords do not match
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
                 <p class="email-tag">Reset email for email here</p>
                 <div class="txt_field">
                     <i class="fas fa-lock"></i>
