@@ -35,7 +35,7 @@ body {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
 
-.center h1 {
+.center .head-1 {
   text-align: center;
   color: #027a60;
   padding: 20px 0;
@@ -46,7 +46,7 @@ body {
   padding: 0 30px;
   box-sizing: border-box;
 }
-.input-box{
+.input-box-css{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -57,7 +57,7 @@ body {
 .input-group-1{
     display: flex;
 }
-.input-group-1 .Input{
+.input-group-1 .Input-css{
     margin: 6px;
     width: 190px;
     border-radius: 5px;
@@ -65,7 +65,7 @@ body {
     padding-left: 2.2rem;
     border: 1px solid #bebebe;
 }
-.input-group-1 .Input-mail{
+.input-group-1 .Input-css-mail{
     margin: 12px;
     width: 400px;
     border-radius: 5px;
@@ -90,7 +90,7 @@ body {
     min-width: 40px;
     color: #027a60;
 }
-.input-group-1 .Input:focus{
+.input-group-1 .Input-css:focus{
     outline: none;
 }
 input[type="submit"] {
