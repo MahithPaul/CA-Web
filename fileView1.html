@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-group-1.0">
+    <title>P. Lakshmana rao & Co | Files</title>
+    <link rel="stylesheet" href="views.css">
+    <script src="https://kit.fontawesome.com/7fd178d5a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="file-box">
+            <div class="file-top">
+                <div class="back-btn">
+                    <a href="#">
+                        <img src="arrow-left.svg" alt="<-">
+                        Back
+                    </a>
+                </div>
+                <h2 style="text-align: center;">2021-2022 Assessment Year</h2>
+            </div>
+            <div class="file-down">
+                <div class="files-area">
+                    <table>
+                        <tbody>
+                            <form action= "/dashboard/others/downloadFile/<%= user.others[i].filename  %>" method="post">
+                                <tr class="trz trh">
+                                    <td class="tdc">
+                                        Acknowledgement
+                                    </td>
+                                    <input type="text" name="downloadLink" id="downloadLink" value="<%= user.others[i].link %>" hidden>
+                                    <td>
+                                        <div class="select">
+                                            <button type="submit"><i class="fa-solid fa-download"></i>Download</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </form>
+                            <form action= "/dashboard/others/downloadFile/<%= user.others[i].filename  %>" method="post">
+                                <tr class="trz trh">
+                                    <td class="tdc">
+                                        Computation
+                                    </td>
+                                    <input type="text" name="downloadLink" id="downloadLink" value="<%= user.others[i].link %>" hidden>
+                                    <td>
+                                        <div class="select">
+                                            <button type="submit"><i class="fa-solid fa-download"></i>Download</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </form>
+                            <form action= "/dashboard/others/downloadFile/<%= user.others[i].filename  %>" method="post">
+                                <tr class="trz trh">
+                                    <td class="tdc">
+                                        From26AS
+                                    </td>
+                                    <input type="text" name="downloadLink" id="downloadLink" value="<%= user.others[i].link %>" hidden>
+                                    <td>
+                                        <div class="select">
+                                            <button type="submit"><i class="fa-solid fa-download"></i>Download</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </form>
+                            <form action= "/dashboard/others/downloadFile/<%= user.others[i].filename  %>" method="post">
+                                <tr class="trz trh">
+                                    <td class="tdc">
+                                        Form
+                                    </td>
+                                    <input type="text" name="downloadLink" id="downloadLink" value="<%= user.others[i].link %>" hidden>
+                                    <td>
+                                        <div class="select">
+                                            <button type="submit"><i class="fa-solid fa-download"></i>Download</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </form>
+                            <form action= "/dashboard/others/downloadFile/<%= user.others[i].filename  %>" method="post">
+                                <tr class="trz trh">
+                                    <td class="tdc">
+                                        Challan
+                                    </td>
+                                    <input type="text" name="downloadLink" id="downloadLink" value="<%= user.others[i].link %>" hidden>
+                                    <td>
+                                        <div class="select">
+                                            <button type="submit"><i class="fa-solid fa-download"></i>Download</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </form>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
