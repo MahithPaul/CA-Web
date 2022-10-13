@@ -87,8 +87,7 @@ tbody {
     box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
     display: -webkit-box;
     display: -webkit-flex;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
     margin: 7px;
     align-items: center;
     background-color: #fff;
@@ -143,10 +142,9 @@ tbody {
     .trz {
         padding: 10px 15px;
     }
-    /* .tdc{
-        width: 70px;
-        background-color: #003847;
-    } */
+    .tdc{
+        font-size: 12px;
+    }
     .select button {
         width: 100px;
         height: 30px;
