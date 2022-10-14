@@ -12,137 +12,352 @@
 
 <body>
     <div class="main">
-        <div class="center">
+        <div class="center-1">
             <h1>Income Tax</h1>
-            <form action="/uploads/fileupload/it" method="post" enctype="multipart/form-data" accept="image/*,application/pdf,application/*">
+            <form action="/uploads/fileupload" method="post" enctype="multipart/form-data">
+                <div class="main-box">
+                    <div class="content-row-1">
+                        <div class="head-h">
+                            <p>Username</p>
+                        </div>
+                        <div class="head-h">
+                            <p>Service</p>
+                        </div>
+                    </div>
 
-                <table>
-                    <tbody>
-                        <tr>
-                            <td class="td-1">
-                                <label for="name">Select User's name </label>
-                            </td>
-                            <td>
-                                <div class="txt_field">
-                                    <select name="name" id="name" style="text-transform: capitalize;"
-                                        data-live-search="true" class="year-select">
-
-
-
-                                        <option value="rizwan md abcdefg123">rizwan md</option>
-
-
-
-                                        <option value="mr abcd abccd1234k">mr abcd</option>
-
-
-
-                                        <option value="heyhello heyhello abccd1234e">heyhello heyhello</option>
-
-
-
-                                        <option value="iam new adscs1234p">iam new</option>
-
-
-
-                                        <option value="rizzzzzz mdd abdcd1234a">rizzzzzz mdd</option>
-
-
-
-                                        <option value="new  heroku abcpd1234e">new heroku</option>
-
-
-
-                                        <option value="mahith paul asdcd1233k">mahith paul</option>
-
-
-
-                                        <option value="one last chapn1212e">one last</option>
-
-
-
-                                        <option value="hanuman season legce1212n">hanuman season</option>
-
-
-
-                                        <option value="new legend seacs1234n">new legend</option>
-
-
-
-                                        <option value="ca deepak cadce1212e">ca deepak</option>
-
-                                    </select>
+                    <div class="fel-cen">
+                        <div class="content-box">
+                            <div class="head-h">
+                                <label for="year">Year </label>
+                            </div>
+                            <div class="txt_field">
+                                <select name="year" id="year" class="year-select">
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-area">
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="acknowledge">Acknowledge </label>
                                 </div>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td class="td-1">
-                                <label for="service">Select Service </label>
-                            </td>
-                            <td>
                                 <div class="txt_field">
-                                    <select name="service" id="service" data-live-search="true" class="year-select">
-                                        <option value="it">IT</option>
-                                        <option value="gst">GST</option>
-                                        <option id="mca" value="mca">MCA</option>
-                                        <option id="others" value="others">OTHERS</option>
-                                    </select>
+                                    <input type="file" name="acknowledge" id="acknowledge" class="select">
                                 </div>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td class="td-1">
-                                <label for="year">Select Year </label>
-                            </td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="computation">computation &emsp; </label>
+                                </div>
                                 <div class="txt_field">
-                                    <select name="year" id="year" class="year-select">
-                                        <option value="2022">2022</option>
-                                        <option value="2021">2021</option>
-                                        <option value="2020">2020</option>
-                                        <option value="2019">2019</option>
-                                        <option value="2018">2018</option>
-                                    </select>
+                                    <input type="file" name="computation" id="computation" class="select">
                                 </div>
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="form26">form26 &emsp;&ensp;&emsp;&ensp; </label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="form26" id="form26" class="select">
+                                </div>
+                            </div>
 
-                        <tr>
-                            <td class="td-1">
-                                <label for="filename">Enter Filename </label>
-                            </td>
-                            <td>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="forms">forms &emsp;&emsp;&ensp;&emsp;&ensp; </label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="forms" id="forms" class="select">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="itchallan">it challan &emsp;&emsp;</label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="itchallan" id="itchallan" class="select">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fel-cen">
+                        <div class="submit-btn">
+                            <input type="submit" value="Upload">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+        <!-- ================ GST FORM ============== -->
+
+        <div class="center-2">
+            <h1>Goods and Services Tax</h1>
+            <form action="/uploads/fileupload" method="post" enctype="multipart/form-data">
+                <div class="main-box">
+                    <div class="content-row-1">
+                        <div class="head-h">
+                            <p>Username</p>
+                        </div>
+                        <div class="head-h">
+                            <p>Service</p>
+                        </div>
+                    </div>
+
+                    <div class="fel-cen">
+                        <div class="content-box">
+                            <div class="head-h">
+                                <label for="year">Year </label>
+                            </div>
+                            <div class="txt_field">
+                                <select name="year" id="year" class="year-select">
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-area">
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="gstr1">gstr-1 </label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="gstr1" id="gstr1" class="select">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="gstr2b">gstr-2b </label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="gstr2b" id="gstr2b" class="select">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="gstr3b">gstr-3b </label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="gstr3b" id="gstr3b" class="select">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="gstchallan">gst challan </label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="gstchallan" id="gstchallan" class="select">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fel-cen">
+                        <div class="submit-btn">
+                            <input type="submit" value="Upload">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+        <!-- ================ MCA FORM ============== -->
+
+
+
+        <div class="center-3">
+            <h1>Ministry Of Corporate Affairs </h1>
+            <form action="/uploads/fileupload" method="post" enctype="multipart/form-data">
+                <div class="main-box">
+                    <div class="content-row-1">
+                        <div class="head-h">
+                            <p>Username</p>
+                        </div>
+                        <div class="head-h">
+                            <p>Service</p>
+                        </div>
+                    </div>
+
+                    <div class="fel-cen">
+                        <div class="content-box">
+                            <div class="head-h">
+                                <label for="year">Year </label>
+                            </div>
+                            <div class="txt_field">
+                                <select name="year" id="year" class="year-select">
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-area">
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="aoc4form">aoc4 form &emsp;&ensp;</label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="aoc4form" id="aoc4form" class="select">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="aoc4challan">aoc4 challan &emsp;&ensp; </label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="aoc4challan" id="aoc4challan" class="select">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="mgt7form">mgt7 form &emsp;&ensp;</label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="mgt7form" id="mgt7form" class="select">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="mgt7challan">mgt7 challan &ensp; </label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="mgt7challan" id="mgt7challan" class="select">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="dpt3">dpt3 &emsp;&emsp;&emsp;&emsp;&ensp;</label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="file" name="dpt3" id="dpt3" class="select">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fel-cen">
+                        <div class="submit-btn">
+                            <input type="submit" value="Upload">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+
+        <!-- ================ OTHERS FORM ============== -->
+        <div class="center-4">
+            <h1>Admin Uploads </h1>
+            <form action="/uploads/fileupload" method="post" enctype="multipart/form-data">
+                <div class="main-box">
+                    <div class="content-row-1">
+                        <div class="head-h">
+                            <p>Username</p>
+                        </div>
+                        <div class="head-h">
+                            <p>Service</p>
+                        </div>
+                    </div>
+
+                    <div class="fel-cen">
+                        <div class="content-box">
+                            <div class="head-h">
+                                <label for="year">Year </label>
+                            </div>
+                            <div class="txt_field">
+                                <select name="year" id="year" class="year-select">
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-area">
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+            
+                                        <label for="filename">Filename &emsp;&ensp;&emsp;&nbsp;</label>
+                                    
+                                </div>
                                 <div class="txt_field">
                                     <input type="text" name="filename" id="filename" required class="year-select">
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td-1">
-                                <label for="filename">Enter Filename </label>
-                            </td>
-                            <td>
-                                <div class="txt_field">
-                                    <input type="file" id="file" name="file" class="select">
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="content-box">
+                                <div class="head-h">
+                                    <label for="othersfile">Select a file &emsp;  </label>
                                 </div>
-                            </td>
-                        </tr>
-                    </tbody>
+                                <div class="txt_field">
+                                    <input type="file" name="dpt3" id="dpt3" class="select">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="fel-cen">
+                            <div class="submit-btn">
+                                <input type="submit" value="Upload">
+                            </div>
+                        </div>
+                    </div>
 
 
-                </table>
 
-
-                <div class="submit-btn">
-                    <input type="submit" value="Upload">
                 </div>
-            </form>
-        </div>
-    </div>
 </body>
 
 </html>

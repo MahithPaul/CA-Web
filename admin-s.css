@@ -132,3 +132,8 @@ svg{
 .submit-btn:hover svg{
     display: block;
 }
+@media screen and (max-width:450px) {
+    .center{
+        width: calc(100% - 10px);
+    }
+}
