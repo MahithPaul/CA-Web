@@ -8,144 +8,120 @@
 }
 
 body {
-    /* background: rgba(0, 0, 0, .5); */
     height: 100%;
 }
 
 .main-box {
     width: 100%;
     height: 100vh;
-    display: flex;
-    background: rgba(0, 0, 0, .5);
-    justify-content: center;
-    align-items: center;
-    margin: 0px auto;
+    padding: 0px 10rem;
+    overflow: hidden;
+    background-color: aliceblue;
 }
 .file-box {
-    width: 700px;
-    height: 500px;
     display: flex;
-    flex-direction: column;
-
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    flex-direction:column;
+background-color: aliceblue;
 }
-
-.file-top {
-    padding: 25px 0px;
+.file-top{
     display: grid;
-    grid-template-columns: .8fr 2fr;
-    border-bottom: 1px solid silver;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px 20px 20px 10px;
+    border-bottom: 1px solid black;
 }
-
 .file-top .back-btn {
     display: flex;
     padding-left: 25px;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .back-btn a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #000;
     border-radius: 5px;
-    background-color: #003847;
+    background-color: aliceblue;
     text-decoration: none;
     padding: 6px 8px;
+    transition-duration: 3s ;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .back-btn a img {
+    display: none;
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
-
-.file-down {
-    padding: 10px 40px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    height: 100%;
-}
-
-table,
-tbody {
-    display: block;
-}
-
-tbody {
-    vertical-align: middle;
-}
-
-.trz {
-    padding: 10px 20px;
-    -webkit-box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
-    box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
-    display: -webkit-box;
-    display: -webkit-flex;
+.back-btn a:hover img{
     display: flex;
-    margin: 7px;
-    align-items: center;
-    background-color: #fff;
-    justify-content: space-between;
-    transform: scaleX(1.03);
+}
+.file-down{
+    height:100vh;
+}
+.css-296{
+    padding: 1rem 5rem 0px 5rem;
+}
+.divz{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px 25px 0px 25px;
+    padding: 30px 25px;
+    border-bottom: 1px solid silver;
+}
+.divz:hover{
+    border: none;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
-
-.trh:hover {
-    transform: scaleX(1.04);
-    background-color: #fff;
-}
-
-.tdc {
-    height: 45px;
+.tdc{
     display: flex;
     align-items: center;
+    font-size: 18px;
 }
-
-.select button {
-    width: 120px;
-    height: 45px;
-    margin-left: 40px;
+.select{
     display: flex;
     justify-content: center;
-    gap: 10px;
+}
+.select button{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    width: 125px;
+    height: 35px;
+    padding: 10px;
     font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: rgb(237, 239, 254);
     border: none;
-}
-
-.select button:hover {
-    background-color: #003847;
     color: #fff;
+    background-color: #3d92f3;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-
+button:hover{
+    background-color: #2481eb;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
 @media screen and (max-width:450px) {
+    .main-box {
+        padding: 0;
+    }
+    .css-296{
+        padding: 0px;
+    }
     h2{
-        font-size: 18px;
-        padding:0px 10px;
+        text-align: center;
     }
-    .file-down{
-        padding: 10px 20px;
-    }
-    .file-box{
-        width: 80% ;
-    }
-    .trz {
-        padding: 10px 15px;
+    a{
+        font-size: 14px;
     }
     .tdc{
-        font-size: 12px;
+        font-size: 12PX;
     }
-    .select button {
+    .select button{
         width: 100px;
         height: 30px;
         font-size: 12px;

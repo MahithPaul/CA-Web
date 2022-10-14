@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.1/dist/sweetalert2.all.min.js"></script> -->
+    <%- include('../partials/bootstraplinks') %>
+        <style>
+            .main-content,.error-h1,form {
+                margin-left: 2rem;
+            }
+            .service-txt{
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        </style>
+        <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="main-content">
+        <h1>User Details</h1>
+        <p>Name : <%= userDetails.firstname %> <%= userDetails.lastname %></p>
+        <p>Service : <span class="service-txt"><%- user.service %></span></p>
+    </div>
+    <br>
+    <% if(user.service === "mca" && userDetails.typeOfAccount === "P"){ %>
+        <h1 class="error-h1">This is a user and doesn't have MCA enabled</h1>
+    <% }else{ %>
+    <!-- IT form -->
+    <% if(user.service === "it"){ %>
+    <form action="/uploads/fileupload/it" method="post" enctype="multipart/form-data"
+        accept="image/*,application/pdf,application/*">
+
+        <input type="text" name="name" id="name" value="<%= user.name %>" hidden>
+
+        <input type="text" name="service" id="service" value="<%= user.service %>" hidden>
+
+        <label for="year">Select an year : </label>
+        <%- include('../partials/years') %>
+            <br>
+            <br>
+
+            <label for="acknowledge">Acknowledge : </label>
+            <input type="file" name="acknowledge" id="acknowledge">
+            <br>
+            <br>
+
+            <label for="computation">computation : </label>
+            <input type="file" name="computation" id="computation">
+            <br>
+            <br>
+
+            <label for="form26">form26 : </label>
+            <input type="file" name="form26" id="form26">
+            <br>
+            <br>
+
+            <label for="forms">forms : </label>
+            <input type="file" name="forms" id="forms">
+            <br>
+            <br>
+
+            <label for="itchallan">it challan : </label>
+            <input type="file" name="itchallan" id="itchallan">
+            <br>
+            <br>
+            <button type="submit">upload files</button>
+    </form>
+    <% } %>
+
+    <!-- GST form -->
+    <% if(user.service === "gst"){ %>
+        <form action="/uploads/fileupload/gst" method="post" enctype="multipart/form-data"
+        accept="image/*,application/pdf,application/*">
+
+        <input type="text" name="name" id="name" value="<%= user.name %>" hidden>
+
+        <input type="text" name="service" id="service" value="<%= user.service %>" hidden>
+
+        <label for="year">Select an year : </label>
+        <%- include('../partials/years') %>
+        <br>
+        <br>
+
+        <label for="gstr1">gstr-1 : </label>
+        <input type="file" name="gstr1" id="gstr1">
+        <br>
+        <br>
+
+        <label for="gstr2b">gstr-2b : </label>
+        <input type="file" name="gstr2b" id="gstr2b">
+        <br>
+        <br>
+
+        <label for="gstr3b">gstr-3b : </label>
+        <input type="file" name="gstr3b" id="gstr3b">
+        <br>
+        <br>
+
+        <label for="gstchallan">gst challan : </label>
+        <input type="file" name="gstchallan" id="gstchallan">
+        <br>
+        <br>
+        <button type="submit">upload files</button>
+    </form>
+    <% } %>
+
+    <!-- MCA form -->
+    <% if(user.service === "mca"){ %>
+        <form action="/uploads/fileupload/mca" method="post" enctype="multipart/form-data"
+        accept="image/*,application/pdf,application/*">
+
+        <input type="text" name="name" id="name" value="<%= user.name %>" hidden>
+
+        <input type="text" name="service" id="service" value="<%= user.service %>" hidden>
+
+        <label for="year">Select an year : </label>
+        <%- include('../partials/years') %>
+        <br>
+        <br>
+
+        <label for="aoc4form">aoc4 form : </label>
+        <input type="file" name="aoc4form" id="aoc4form">
+        <br>
+        <br>
+
+        <label for="aoc4challan">aoc4 challan : </label>
+        <input type="file" name="aoc4challan" id="aoc4challan">
+        <br>
+        <br>
+
+        <label for="mgt7form">mgt7 form : </label>
+        <input type="file" name="mgt7form" id="mgt7form">
+        <br>
+        <br>
+
+        <label for="mgt7challan">mgt7 challan : </label>
+        <input type="file" name="mgt7challan" id="mgt7challan">
+        <br>
+        <br>
+
+        <label for="dpt3">dpt3 : </label>
+        <input type="file" name="dpt3" id="dpt3">
+        <br>
+        <br>
+
+        <br>
+        <button type="submit">upload files</button>
+    </form>
+    <% } %>
+
+    <!-- OTHERS form -->
+    <% if(user.service === "others"){ %>
+        <form action="/uploads/fileupload/others" method="post" enctype="multipart/form-data"
+        accept="image/*,application/pdf,application/*">
+
+        <input type="text" name="name" id="name" value="<%= user.name %>" hidden>
+
+        <input type="text" name="service" id="service" value="<%= user.service %>" hidden>
+
+        <label for="othersfile">Select a file to upload : </label>
+        <input type="file" name="othersfile" id="othersfile">
+        <br>
+        <br>
+
+        <button type="submit">upload files</button>
+    </form>
+    <% } %>
+    <% } %>
+
+</body>
+
+
+</html>
