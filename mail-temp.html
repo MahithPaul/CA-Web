@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Nunito:ital,wght@0,600;1,400&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/8833c809d2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8833c809d2.js" crossorigin="anonymous"></script>
     <style>
         * {
             margin: 0;
@@ -18,119 +18,73 @@
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
         }
-        body{
-            background-color: aliceblue;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        .logo-area {
-            display: inline-block;
-            flex-direction: column;
-            margin: 30px 0;
-        }
+    </style>
 
-        .image-logo {
-            border-radius: 11px;
-        }
+</head>
 
-        .head1 {
-            display: inline-block;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            vertical-align: top;
-            font-size: 16px;
-        }
+<body style="background-color: aliceblue;">
+    <div class="container"
+        style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; ">
 
-        .head-b {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .card{
-            display: flex;
+        <div class="card" style="display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 1rem 2rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #fff;">
+            <div class="logo-area" style="display: inline-block;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            padding: 1rem 2rem;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            background-color: #fff;
-        }
-        .logo-area-1{
-            display: flex;
+            margin: 30px 0;">
+                <img src="logo.jpeg" alt="Logo" class="image-logo" width="70px" height="60px"
+                    style="border-radius: 11px;">
+                <div class="head1" style="display: inline-block;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                vertical-align: top;
+                font-size: 16px;">
+                    <p class="head-b" style="font-weight: bold;
+                    margin-bottom: 5px;">P LAKSHMANA RAO & CO </p>
+                    <p class="head-p">CHARTERED ACCOUNTANTS</p>
+                </div>
+            </div>
+            <div class="logo-area-1" style="display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             padding: 1rem;
-            border-bottom: 2px solid silver;
-        }
-        .img-svg{
-            margin-bottom: 30px;
-        }
-        .logo-area-1 .p-1{
-            font-size: 28px;
-            color: #5e5c5c;
-            
-            margin-bottom: 20px;
-            
-        }
-        .p-2{
-            margin: 40px 0px 20px;
-            text-align: center;
-        }
-        .p-3{
-            margin: 10px 0px 20px;
-            text-align: center;
-        }
-        .btn{
-            text-decoration: none;
+            border-bottom: 2px solid silver;">
+                <img src="mail-i.svg" class="img-svg" style="margin-bottom: 30px;" width="80px" height="80px">
+                <div class="p-1" style="font-size: 28px;
+                color: #5e5c5c;
+    
+                margin-bottom: 20px;">
+                    Verify your email address
+                </div>
+            </div>
+            <div class="p-2" style=" margin: 40px 0px 20px;
+            text-align: center;">
+                In order to start your account, you need to
+                <p>confirm your email address.</p>
+            </div>
+            <a href="#" class="btn" style="text-decoration: none;
             text-align: center;
             width: 80%;
             padding: 17px 10px;
             border: none;
             border-radius: 5px;
             color: #fff;
-            background-color: #003847;
-        }
-        span{
-            align-items: center;
+            background-color: #003847;">Verify Email Address</a>
+            <span style="align-items: center;
             width: 15%;
             height: 2px;
             background-color: #ccc;
-            margin: 20px 0px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        
-        <div class="card">
-            <div class="logo-area">
-                <img src="logo.jpeg" alt="Logo" class="image-logo" width="70px" height="60px">
-                <div class="head1">
-                    <p class="head-b">P LAKSHMANA RAO & CO </p>
-                    <p class="head-p">CHARTERED ACCOUNTANTS</p>
-                </div>
-            </div>
-            <div class="logo-area-1">
-               <img src="mail-i.svg" class="img-svg" width="80px" height="80px">
-                <div class="p-1">
-                    Verify your email address
-                </div>
-            </div>
-            <div class="p-2">
-                In order to start your account, you need to 
-                <p>confirm your email address.</p>
-            </div>
-            <a href="#" class="btn">Verify Email Address</a>
-            <span></span>
-            <div class="p-3">
+            margin: 20px 0px;"></span>
+            <div class="p-3" style="margin: 10px 0px 20px;
+            text-align: center;">
                 If you did not sign up for this accouont you can ignore this email and
                 <p>the account will be deleted</p>
             </div>
