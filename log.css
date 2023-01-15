@@ -95,7 +95,7 @@
     font-size: 2rem;
 }
 #about {
-    padding: 3rem 0rem;
+    padding: 3rem 2rem;
     background-color: whitesmoke;
 }
 
@@ -131,7 +131,7 @@
 
 .about-us-area {
     margin: 20px;
-    padding: 3rem 2rem 3rem 2rem;
+    padding: 5rem 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -158,9 +158,10 @@
     background: #fff;
     width: calc(100% - 100px);
     padding-top: 25px;
-    margin-bottom: 2rem;
+    margin: 20px;
+    border-radius: 5px;
     display: block;
-    margin: 0 auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .set-head {
@@ -186,30 +187,34 @@
     border-radius: 2px;
     background-color: #027a60;
 }
-
+.about-css-128{
+    background-color: whitesmoke;
+    padding: 2.5rem 1rem;
+    display: flex;
+    justify-content: center;
+}
 .service-provided {
     width: 100%;
     padding-left: 4rem;
     padding-right: 4rem;
     padding-bottom: 2rem;
+    
 }
 
 .grid-area {
     margin: 40px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-}
-.ser-card :hover{
-    color: #003847;
 }
 .ser-card {
     width: 310px;
     height: 350px;
     overflow: hidden;
     background: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 20px;
     padding: 1.2rem;
     display: block;
@@ -236,7 +241,6 @@
 }
 .ser-card:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-
 
 }
 /* MOBILE VIEW */
@@ -341,11 +345,13 @@
         font-size: 20px;
     }
    
-    
     .image-area {
         height: 550px;
     }
-
+    .about-css-128{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .image-slide h4 {
         font-size: 2rem;
     }
@@ -359,12 +365,20 @@
     .about-m {
         width: 100%;
     }
-
+    .about-content{
+        margin: 1rem;
+    }
     .grid-area {
         grid-template-columns: 1fr;
+        gap: 70px;
     }
-
+    .our-service{
+        width: calc(100% - 15px);
+        margin: 0;
+    }
     .about-us-area {
         flex-direction: column;
+        padding: 3rem 2rem;
+        margin: 0;
     }
 }
