@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P. Lakshmana rao & Co</title>
+    <title>P Lakshmana rao & Co | Home</title>
     <link rel="stylesheet" href="log.css">
     <link rel="stylesheet" href="head-foot.css">
     <script src="https://kit.fontawesome.com/7fd178d5a2.js" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
             <div class="css-ws7">
                 <ul>
                     <li><a href="log-in.html" class=" css-h">Log In</a></li>
-                    <li><a href="Sign Up.html" class="css-a css-ht">Sign Up</a></li>
+                    <li><a href="sign-up.html" class="css-a css-ht">Sign Up</a></li>
                 </ul>
             </div>
             <div class="mobile-hamburger">
@@ -39,7 +39,9 @@
     </div>
     <!-- mobile menu  -->
     <div class="overlay" id="mobile-nav" style="width:100%;">
-        <div class="blocker" onclick="hidePopup()"></div>
+        <!-- <div class="blocker" onclick="hidePopup()"></div> -->
+        <a href="javascript:void(0)" class="closebtn" onclick="hidePopup()" style="
+        font-size: 35px;">×</a>
        
         <div class="overlay-content">
             <div class="css-menu">
@@ -117,7 +119,7 @@
                     <i class="fa-solid fa-circle-check"></i>
                     <h2>Auditing and attestation</h2>
                     <p>We provide various Auditing & Attestation Services to Companies and Firms and Trusts. Audit
-                        includes thorough verification of evidences, vouchers & certifications</p>
+                        includes thorough verification of evidences, vouchers & certifications.</p>
                 </div>
                 <div class="ser-card">
                     <i class="fa-solid fa-handshake"></i>
@@ -140,7 +142,7 @@
                 <i class="fa-solid fa-bullhorn"></i>
                 <h2>Litigations and appeals</h2>
                 <p>We provide various Auditing & Attestation Services to Companies and Firms and Trusts. Audit
-                    includes thorough verification of evidences, vouchers & certifications</p>
+                    includes thorough verification of evidences, vouchers & certifications.</p>
             </div>
         </div>
     </div>
@@ -199,7 +201,7 @@
 
     <script>
         function openNav() {
-            document.getElementById("mobile-nav").style.width = "70%";
+            document.getElementById("mobile-nav").style.width = "100%";
             document.getElementById("mobile-nav").style.display = "block";
         }
         function hidePopup() {
