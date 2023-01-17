@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans', sans-serif;
+}
+body{
+    background-color: #f5f3f3;
+}
+.head-css-124{
+    margin: 30px 0px;
+    text-align: center;
+}
+.main-css-124{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 3rem;
+}
+.main-css-124 p{
+    font-size: 23px;
+}
+button {
+    border-radius: 4px;
+    background-color: #009879;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    padding: 7px 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+button::before {
+    content: '←';
+    position: absolute;
+    opacity: 0;  
+    top: 6px;
+    left: -20px;
+    transition: 0.5s;
+  }
+  
+button:hover{
+    padding-left: 24px;
+    padding-right:8px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+button:hover::before {
+    opacity: 1;
+    left: 10px;
+}
+
+.styled-table {
+    /* display: block; */
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+  }
+  
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  td,th{
+    text-align: center;
+  }
+  

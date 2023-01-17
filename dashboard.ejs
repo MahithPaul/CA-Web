@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include ('partials/favicon') %>
+        <title>P. Lakshmana rao & Co | DASHBOARD
+        </title>
+        <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <img src="/images/main-logo.jpeg" alt="Logo" class="image-logo" width="70px" height="60px">
+        <h1 class="salutation">Hii <span class="capitalize-name">
+                <%= user.firstname %>
+                    <%= user.lastname %>
+            </span> ,</h1>
+        <div class="flex-end">
+            <a class="button-28" role="button" href="/dashboard/compliance-tracker">Compliance Tracker</a>
+
+            <div class="dropdown" onclick="displayBlock()" ondblclick="displayNone()">
+                <i class="fa-regular fa-user" style="font-size: 32px; padding:10px;"></i>
+                <div class="dropdown-content">
+                    <div class="drop-content">
+                        <a href="/users/logout" class="drop">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>logout</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <div class="div-row">
+        <div class="col-1">
+            <div class="card-wapper">
+                <a href="/dashboard/it" class="card-block card-purple-blue">Income Tax</a>
+                <a href="/dashboard/gst" class="card-block card-salmon-pink">Goods & Service Tax</a>
+                <% if(user.typeOfAccount==="c" || user.typeOfAccount==="C" ){ %>
+                    <a href="/dashboard/mca" class="card-block card-purple-pink">MCA</a>
+                    <% } %>
+                        <a href="/dashboard/others" class="card-block card-blue-green">Others</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function displayBlock() {
+            document.querySelector(".dropdown-content").style.display = "block";
+
+
+        }
+        function displayNone() {
+            document.querySelector(".dropdown-content").style.display = "none";
+        }
+    </script>
+    <br>
+    <br>
+</body>
+
+</html>

@@ -9,13 +9,14 @@
 }
 
 body {
-    /* background-color:#fff; */
-    background-image: linear-gradient(to left top, #d3d8c5, #e5caa2, #ffb298, #ff98b7, #fa91f7);
+    background: rgb(90,2,96);
+background: linear-gradient(45deg, rgba(90,2,96,1) 0%, rgba(114,9,121,1) 47%, rgba(5,229,255,1) 100%);
 }
 
 nav {
-    margin: 30px 30px 20px 30px;
+    margin: 20px 30px 0px 30px;
     font-size: 27px;
+    color: white;
 }
 
 nav ul {
@@ -24,7 +25,7 @@ nav ul {
 }
 
 .nav-link a {
-    color: black;
+    color: white;
 }
 
 .nav-link {
@@ -34,7 +35,7 @@ nav ul {
 
 .nav-link a::after {
     display: inline-block;
-    color: #000;
+    color: #fff;
     content: '>';
     font-size: 100%;
     font-weight: bold;
@@ -62,6 +63,7 @@ nav ul {
 
 .d-flex {
     display: flex;
+    color: white;
 }
 
 .justify-center {
@@ -76,7 +78,7 @@ nav ul {
 }
 
 .css-127iv {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -90,6 +92,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     min-width: 0;
+    width: 470px;
     position: relative;
     box-shadow: 0 0 40px rgb(0 0 0 / 10%);
 }
@@ -125,7 +128,7 @@ nav ul {
     padding: 2px;
     /* border: 3px solid #003847; */
     color: #fff;
-    width: 140px;
+    /* width: 140px; */
     border-radius: 50px;
     font-size: 18px;
 }
@@ -249,7 +252,9 @@ tbody {
     .drop {
         display: none;
     }
-
+    .card{
+        width: auto;
+    }
     .css-128iv,
     .empty-set {
         width: calc(100% - 10px);
@@ -266,6 +271,9 @@ tbody {
 
     .head-name {
         margin: 0px 10px;
+    }
+    .filename{
+        width: 140px;
     }
     .file-area{
         margin-top: 40px;

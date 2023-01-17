@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c-track-ui.css">
+    <title>IT CT</title>
+</head>
+<body>
+    <div class="head-css-124">
+        <h1>Hi showing your INCOME TAX table</h1>
+    </div>
+    <div class="main-css-124">
+        <button><span>Go Home</span></button>
+        <p>Selected Year : 2023</p>
+    </div>
+    
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Due Date</th>
+                    <th>Filed Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Audit Report</td>
+                    <td><%= `30-09-${data.year}` %></td>
+                    <% if(user.auditreport === ""){ %>
+                        <td>-</td>
+                    <% }else{ %>
+                        <% let auditreport = user.auditreport.split('-') %>  
+                        <td><%= `${auditreport[2]}-${auditreport[1]}-${auditreport[0]}` %></td>
+                    <% } %>
+                </tr>
+                <tr>
+                    <td>Return of Income (ITR)</td>
+                    <td><%= `31-10-${data.year}` %></td>
+                    <% if(user.roi === ""){ %>
+                        <td>-</td>
+                    <% }else{ %>
+                        <% let roi = user.roi.split('-') %>  
+                        <td><%= `${roi[2]}-${roi[1]}-${roi[0]}` %></td>
+                    <% } %>
+                </tr>
+                <% let monthsno = ['06','09','12','03']; %>
+                <% for(let i=0;i<4;i++){ %>
+                    <tr>
+                        <td><%= `Advance Tax ${i+1}` %></td>
+                        <td><%= `30-${monthsno[i]}-${data.year}` %></td>
+                        <% if(user.advanceTax.length === 0){ %>
+                            <td>-</td>
+                        <%} else if(user.advanceTax[i]===""){ %>
+                            <td>-</td>
+                        <% }else{ %>
+                            <%# console.log(user.directors.length) %>
+                            <% let date = user.advanceTax[i].split('-') %> 
+                            <td><%= `${date[2]}-${date[1]}-${date[0]}` %></td>
+                        <% } %>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    <% } %> -->
+</body>
+</html>
