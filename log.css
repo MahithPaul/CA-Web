@@ -121,7 +121,7 @@
 
 .about-head p {
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 600;
     color: #027a60;
@@ -131,7 +131,7 @@
 
 .about-us-area {
     margin: 20px;
-    padding: 5rem 4rem;
+    padding: 3rem 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -141,13 +141,14 @@
 }
 
 .about-title {
-    font-size: 2.2rem;
+    font-size: 3rem;
     color: #003847;
     text-transform: uppercase;
 }
 
 .about-matter p {
     margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
 .about-m {
@@ -211,7 +212,7 @@
 }
 .ser-card {
     width: 310px;
-    height: 350px;
+    height: 340px;
     overflow: hidden;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
@@ -223,7 +224,7 @@
 }
 .ser-card i {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     font-size: 3.2rem;
     text-align: center;
 }
@@ -233,15 +234,20 @@
 .ser-card h2 {
     text-transform: capitalize;
     text-align: center;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .ser-card p {
     text-align: center;
+    margin: 2rem 0;
+    font-size: 1.1rem;
 }
 .ser-card:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
+}
+.ser-card:hover>i{
+    color: #003847;
 }
 /* MOBILE VIEW */
 /* NAV BAR */
