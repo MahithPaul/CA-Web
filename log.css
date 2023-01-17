@@ -50,12 +50,7 @@
     margin-bottom: 36px;
     line-height: 48px;
 }
-.css-btn{
-    margin-bottom: 32px;
-    display: flex;
-    justify-content: flex-start;
 
-}
 .css-htn{
     width: 130px;
     padding: 9px;
@@ -250,6 +245,83 @@
     color: #003847;
 }
 
+.css-btn{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.center {
+   
+    top: 50%;
+    left: 50%;
+}
+.btn,button {
+    background: #000;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    background-color: #003847;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 2px solid #003847;
+    transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    min-width: 100px;
+    min-width: 8rem;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+      background: #003847;
+      border-color: #003847;
+      color: #fff;
+    }
+  
+  
+.btn-border {
+    background-color: transparent;
+    color: #000;
+  }
+  
+.btn-arrow {
+    position: relative;
+      transition: #000 300ms ease-out;
+}
+span {
+      display: inline-block;
+      position: relative;
+      transition: all 300ms ease-out;
+      will-change: transform;
+    }
+.btn-arrow:hover span {
+      transform: translate3d(-1rem, 0, 0);
+    }
+.btn-arrow svg {
+      position: absolute;
+      width: 1.1em;
+      right: 0px;
+      right: 0rem;
+      opacity: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 300ms ease-out;;
+    stroke-width: 5;
+    }
+.btn-arrow:hover svg {
+      opacity: 1;
+      right: -2rem;
+    }
+  
 @media screen and (max-width: 450px) {
     .mobile-hamburger {
         display: flex;
@@ -279,8 +351,8 @@
         height: 550px;
     }
     .about-css-128{
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 3px;
+        padding-right: 3px;
     }
     .image-slide h4 {
         font-size: 2rem;
