@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans', sans-serif;
+}
+body{
+    background-color: #273f3b;
+}
+.main{
+    max-width: 600px;
+    margin: 30px auto;
+}
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+    border-radius: 0.25rem;
+    border: 1px solid #f5c2c7;
+    padding: 20px;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  .alert-success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-radius: 0.25rem;
+    border: 1px solid #d1d1d1;
+    padding: 20px;
+  }
+  .alert-info{
+    color: #055160;
+    background-color: #cff4fc;
+    border-radius: 0.25rem;
+    border: 1px solid #b6effb;
+    padding: 20px;
+  }
+  .alert-warning{
+    color: #664d03;
+    background-color: #fff3cd;
+    border-radius: 0.25rem;
+    border: 1px solid #ffecb5;
+    padding: 20px;
+  }
