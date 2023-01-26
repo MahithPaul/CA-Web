@@ -1,14 +1,30 @@
 #alert-box {
     position: fixed;
-    
+    bottom: 20px;
+    right: 20px;
     padding: 20px;
     background-color: #ddd;
     display: none;
     animation: fadein 0.5s;
   }
   
+  .closebtn {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
   @keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+  #alert-box.fadeOut {
+    animation: fadeOut 1.5s;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
   

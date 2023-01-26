@@ -7,34 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P Lakshmana rao & Co | Home</title>
     <link rel="stylesheet" href="last.css">
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
     <br><br>
     
-        <div class="alert-danger">
-            <span class="closebtn"  onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="alert-danger alert animate__fadeIn" id="alert-box" >
+            <span class="closebtn" onclick="this.parentElement.style.display='none';" >&times;</span>
             <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
         </div>
         <br><br>
     
-        <div class="alert-success">
-            <span class="closebtn"  onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="alert-success alert animate__fadeIn">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';" >&times;</span>
             <strong>Success!</strong> Indicates a successful or positive action.
         </div>
     
         <br><br>
-        <div class="alert-info">
+        <div class="alert-info animate__fadeIn">
             <span class="closebtn"  onclick="this.parentElement.style.display='none';">&times;</span>
             <strong>Info!</strong> Indicates a neutral informative change or action.
         </div>
     <br><br>
-        <div class="alert-warning">
+        <div class="alert-warning animate__fadeIn">
             <span class="closebtn"  onclick="this.parentElement.style.display='none';">&times;</span>
             <strong>Warning!</strong> Indicates a warning that might need attention.
         </div>
-  
+  <script>
+    const closeBtn = document.querySelector(".closebtn");
+    const alertBox = document.querySelector(".alert");   
+    
+    closeBtn.addEventListener("click", function() {
+        alertBox.classList.add("animate__fadeOut");
+    });
+  </script>
 </body>
 
 </html>

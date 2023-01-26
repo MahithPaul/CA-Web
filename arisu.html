@@ -11,24 +11,24 @@
 </head>
 
 <body>
-    <div id="alert-box">
+    <div id="alert-box" >
         <p>This is an alert notification</p>
-        <button id="close-btn">Close</button>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
       </div>
       
 </body>
 <script>
     const alertBox = document.getElementById("alert-box");
-const closeBtn = document.getElementById("close-btn");
-
+const closeBtn = document.querySelector(".closebtn");
 alertBox.style.display = "block";
 
 closeBtn.addEventListener("click", function() {
-  alertBox.style.animation = "fadeout 0.5s";
-  setTimeout(function() {
-    alertBox.style.display = "none";
-  }, 500);
+    alertBox.classList.add("fadeOut");
+    setTimeout(function() {
+        alertBox.style.display = "none";
+    }, 500);
 });
+
 
 </script>
 </html>

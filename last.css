@@ -23,6 +23,22 @@ body{
   }
   
   .closebtn {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #alert-box.fadeOut {
+    animation: fadeOut 1.5s;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+  /* .closebtn {
     margin-left: 15px;
     color: white;
     font-weight: bold;
@@ -31,7 +47,7 @@ body{
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
-  }
+  } */
   
   .closebtn:hover {
     color: black;
