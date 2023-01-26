@@ -7,12 +7,13 @@
 body{
     background-color: aliceblue;
 }
-button {
+.Btn {
     border-radius: 4px;
     background-color: #027a60;
     border: none;
     color: #fff;
     text-align: center;
+    text-decoration: none;
     font-size: 22px;
     padding: 7px 10px;
     width: 150px;
@@ -23,14 +24,14 @@ button {
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
   }
   
-  button{
+  .Btn{
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
   
-  button::before {
+  .Btn::before {
     content: '←';
     position: absolute;
     opacity: 0;  
@@ -39,12 +40,12 @@ button {
     transition: 0.5s;
   }
   
-  button:hover{
+  .Btn:hover{
     padding-left: 24px;
     padding-right:8px;
   }
   
-  button:hover::before {
+  .Btn:hover::before {
     opacity: 1;
     left: 10px;
   }
