@@ -38,12 +38,17 @@
             <strong>Warning!</strong> Indicates a warning that might need attention.
         </div>
   <script>
-    const closeBtn = document.querySelector(".closebtn");
-    const alertBox = document.querySelector(".alert");   
-    
-    closeBtn.addEventListener("click", function() {
-        alertBox.classList.add("animate__fadeOut");
-    });
+    const alertBox = document.getElementById("alert-box");
+const closeBtn = document.querySelector(".closebtn");
+alertBox.style.display = "block";
+
+closeBtn.addEventListener("click", function() {
+  alertBox.classList.add("fadeOut");
+  alertBox.addEventListener("animationend", function() {
+    alertBox.style.display = "none";
+  });
+});
+
   </script>
 </body>
 
