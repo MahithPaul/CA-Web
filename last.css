@@ -19,6 +19,7 @@ body{
     border-radius: 0.25rem;
     border: 1px solid #f5c2c7;
     padding: 20px;
+    animation: fadein 1.5s;
   }
   
   .closebtn {
@@ -41,6 +42,7 @@ body{
     border-radius: 0.25rem;
     border: 1px solid #d1d1d1;
     padding: 20px;
+    animation: fadein 1.5s;
   }
   .alert-info{
     color: #055160;
@@ -48,6 +50,7 @@ body{
     border-radius: 0.25rem;
     border: 1px solid #b6effb;
     padding: 20px;
+    animation: fadein 1.5s;
   }
   .alert-warning{
     color: #664d03;
@@ -55,4 +58,9 @@ body{
     border-radius: 0.25rem;
     border: 1px solid #ffecb5;
     padding: 20px;
+    animation: fadein 1.5s;
+  }
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
